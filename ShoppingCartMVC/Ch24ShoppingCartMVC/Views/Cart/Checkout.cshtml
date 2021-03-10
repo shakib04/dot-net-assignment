@@ -1,0 +1,12 @@
+﻿@model Ch24ShoppingCartMVC.Models.CartViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1> Checkout Page Test</h1>
+
+@foreach (var item in Model.Cart)
+{
+    <p>@item.Display()</p>
+}
